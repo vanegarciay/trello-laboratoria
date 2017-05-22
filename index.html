@@ -8,9 +8,15 @@
 <body>
     <header>    
     </header>
-    <section id="nuevaColumna">
-        <input type="input" id="anadirLista" placeholder="Añadir una lista..." onclick="nuevaColumna()">
+    <section id="tasksBoard">
     </section>
+    <section id="tasksBoardManager">
+        <div id="columna_de_creacion">
+            <input type="input" id="titulo_nueva_columna" placeholder="Añadir una lista..." onkeypress="detectarEnterEnTituloNuevaColumna(event)" onclick="editorNuevaColumna()">
+        </div>
+    </section>
+    <footer>
+    </footer>
     <script type="text/javascript" src="assets/js/main.js"></script>    
 </body>
 </html>
